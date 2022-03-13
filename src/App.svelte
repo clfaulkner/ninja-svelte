@@ -2,6 +2,7 @@
     import Header from "./components/Header.svelte"
     import Footer from "./components/Footer.svelte"
     import Tabs from './components/shared/Tabs.svelte'
+    import Pollform from './components/Pollform.svelte'
 
     let items = ['Current Polls', 'Add New Poll']
     let activeItem = 'Current Polls'
@@ -15,7 +16,7 @@
     {#if activeItem==='Current Polls'}
         <p>Current Polls component goes here</p>
     {:else if activeItem==='Add New Poll'}
-        <p>Add New Poll component goes here</p>
+        <Pollform />
     {/if}
 </main>
 <Footer />
